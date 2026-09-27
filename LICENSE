@@ -1,146 +1,49 @@
-DEXTER DEMON PROPRIETARY LICENSE
-Version 1.0 — All Rights Reserved
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║                    ⚖️  MIT LICENSE - LEGAL DOCUMENT  ⚖️                        ║
+║                                                                                ║
+║                     Copyright (c) 2026 Dexter Demon Team                    ║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+MIT License
 
 Copyright (c) 2026 Dexter Demon Team
-All rights reserved.
 
-================================================================================
-                         TERMS AND CONDITIONS
-================================================================================
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-This software and associated documentation files (the "Software") are the
-exclusive property of Dexter Demon Team. By accessing, viewing, downloading,
-or using this Software, you agree to be bound by the following terms.
-
---------------------------------------------------------------------------------
-1. PERMITTED USE
---------------------------------------------------------------------------------
-
-You ARE permitted to:
-
-  (a) View and read the source code for educational and personal reference.
-  (b) Run the Software on your own devices for personal, non-commercial use.
-  (c) Report bugs, vulnerabilities, or suggest improvements via official
-      channels (GitHub Issues / Pull Requests).
-
---------------------------------------------------------------------------------
-2. PROHIBITED ACTIONS
---------------------------------------------------------------------------------
-
-You are STRICTLY PROHIBITED from:
-
-  (a) REDISTRIBUTION
-      Copying, publishing, uploading, or sharing this Software — in whole or
-      in part — to any other platform, repository, website, forum, social
-      media, or distribution channel.
-
-  (b) COMMERCIAL USE
-      Selling, reselling, sublicensing, renting, leasing, or otherwise
-      monetizing this Software or any derivative work.
-
-  (c) REBRANDING / CLAIMING
-      Removing, altering, or obscuring the original author credits.
-      Claiming this Software as your own work.
-      Rebranding the Software under any other name.
-      Publishing modified versions without explicit written permission.
-
-  (d) DERIVATIVE WORKS
-      Creating, publishing, or distributing modified, adapted, or derivative
-      versions of this Software without explicit written permission from
-      Dexter Demon Team.
-
-  (e) BUNDLING
-      Including this Software in any product, package, installer, or
-      distribution that is sold or shared publicly.
-
-  (f) MIRRORING
-      Hosting mirrors of this Software on any server, cloud, or platform
-      other than the official Dexter Demon Team repository.
-
---------------------------------------------------------------------------------
-3. AUTHORIZED DISTRIBUTION
---------------------------------------------------------------------------------
-
-Distribution rights are EXCLUSIVELY held by:
-
-  ┌──────────────────────────────────────────────────────────┐
-  │                                                          │
-  │              DEXTER DEMON TEAM                           │
-  │              (Official Owner & Maintainer)               │
-  │                                                          │
-  └──────────────────────────────────────────────────────────┘
-
-The ONLY authorized sources for obtaining this Software are:
-
-  • Official GitHub repository owned by Dexter Demon Team
-  • Any other official channels explicitly announced by Dexter Demon Team
-
-Any copy obtained from other sources is UNAUTHORIZED and may be subject to
-legal action.
-
---------------------------------------------------------------------------------
-4. NO WARRANTY
---------------------------------------------------------------------------------
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL
-THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
-FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-DEALINGS IN THE SOFTWARE.
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
---------------------------------------------------------------------------------
-5. LEGAL ENFORCEMENT
---------------------------------------------------------------------------------
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  LEGAL NOTICE                                                                │
+│                                                                            │
+│  This software is distributed under the MIT License, which is a permissive  │
+│  open-source license. It allows commercial use, modification, distribution, │
+│  and private use with minimal restrictions.                                 │
+│                                                                            │
+│  For more information: https://opensource.org/licenses/MIT                  │
+└──────────────────────────────────────────────────────────────────────────────┘
 
-Violation of any term in this License constitutes:
+For inquiries, issues, or contributions:
+  GitHub: https://github.com/dexterdemonteam
+  Repository: https://github.com/dexterdemonteam/SAFE-YORTYMINE
+  Issues: https://github.com/dexterdemonteam/SAFE-YORTYMINE/issues
 
-  • Copyright infringement under applicable international copyright law
-  • Unauthorized use of intellectual property
-  • Grounds for DMCA takedown and/or legal action
-
-Dexter Demon Team reserves the right to pursue all available legal remedies
-against individuals or organizations that violate this License.
-
-Dexter Demon Team reserves the right to grant exceptions and/or special
-permissions on a case-by-case basis in writing.
-
---------------------------------------------------------------------------------
-6. AUTHORSHIP CREDIT
---------------------------------------------------------------------------------
-
-The following credit MUST remain intact in any permitted use:
-
-  ╔══════════════════════════════════════════════════════════╗
-  ║                                                          ║
-  ║              Developed by Dexter Demon Team              ║
-  ║              © 2026 — All Rights Reserved                ║
-  ║                                                          ║
-  ╚══════════════════════════════════════════════════════════╝
-
-Removal or modification of this credit is a direct violation of this License.
-
---------------------------------------------------------------------------------
-7. CONTACT
---------------------------------------------------------------------------------
-
-For permissions, business inquiries, or questions:
-
-  • GitHub:  https://github.com/dexterdemonteam
-  • Issues:  https://github.com/dexterdemonteam/SAFE-YORTYMINE/issues
-
---------------------------------------------------------------------------------
-8. ACCEPTANCE
---------------------------------------------------------------------------------
-
-By using this Software, you acknowledge that you have read, understood, and
-agreed to be bound by all terms and conditions of this License.
-
-If you do NOT agree with these terms — you must immediately cease all use
-of the Software and delete all copies in your possession.
-
-================================================================================
-                    Copyright (c) 2026 Dexter Demon Team
-                          All Rights Reserved.
-================================================================================
+═══════════════════════════════════════════════════════════════════════════════════
+                     Developed by Dexter Demon Team
+                     © 2026 - All Rights Reserved
+═══════════════════════════════════════════════════════════════════════════════════
