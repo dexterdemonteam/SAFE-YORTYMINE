@@ -1,221 +1,104 @@
 <div align="center">
 
-<img src="./logo.png" alt="YORTYMINE Logo" width="220"/>
+<img src="./logo.png" alt="YORTYMINE Logo" width="220" />
 
 # SAFE-YORTYMINE
 
 **Web Reconnaissance & Security Audit Toolkit**
 
-**v1.0.0 · by Dexter Demon Team**
+`v1.0.0` · by **Dexter Demon Team**
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Termux-orange?style=for-the-badge)](https://termux.dev)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](./LICENSE)
-[![Copyright](https://img.shields.io/badge/©%202026-Dexter%20Demon%20Team-black?style=for-the-badge)]()
+[![Copyright](https://img.shields.io/badge/%C2%A9%202026-Dexter%20Demon%20Team-black?style=for-the-badge)]()
 
 [![WhatsApp Channel](https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029Vb8R7mh4tRrz7K4vBm23)
 
----
-
-### 📢 Update terbaru & diskusi → **[Join Channel WhatsApp](https://whatsapp.com/channel/0029Vb8R7mh4tRrz7K4vBm23)**
-
----
+**Update terbaru dan diskusi:** [Join Channel WhatsApp](https://whatsapp.com/channel/0029Vb8R7mh4tRrz7K4vBm23)
 
 </div>
 
-## 🎯 Tentang SAFE-YORTYMINE
+> [!WARNING]
+> **SAFE-YORTYMINE hanya boleh digunakan pada aset milik sendiri atau target yang sudah mendapatkan izin tertulis.** Jangan melakukan pemindaian terhadap sistem pihak lain tanpa otorisasi.
 
-**SAFE-YORTYMINE** adalah toolkit CLI untuk **passive reconnaissance** dan **audit keamanan web**. Dirancang untuk:
+## Daftar Isi
 
-- 🔍 **Security Researcher** yang butuh tool recon cepat
-- 🐛 **Bug Bounty Hunter** untuk fase information gathering
-- 🎓 **Pemula** yang mau belajar web security
-- 🏢 **Tim Internal** yang audit aset sendiri
+- [Tentang](#tentang-safe-yortymine)
+- [Fitur](#fitur)
+- [Instalasi](#instalasi)
+- [Cara Pakai](#cara-pakai)
+- [Struktur Project](#struktur-project)
+- [Target Latihan Legal](#target-latihan-legal)
+- [Legal Notice](#legal-notice)
+- [FAQ](#faq)
+- [Kontribusi](#kontribusi)
+- [Changelog](#changelog)
+- [Lisensi](#lisensi)
 
-> ⚠️ **Tool ini adalah versi PUBLIC/SAFE** — tidak mengandung auto-exploit, auto-inject, atau auto-dump database. Fitur serangan aktif sengaja dihilangkan demi keamanan publik.
+## Tentang SAFE-YORTYMINE
 
----
+**SAFE-YORTYMINE** adalah toolkit CLI untuk **passive reconnaissance** dan **audit keamanan web**. Toolkit ini ditujukan untuk:
 
-## ✨ Fitur Lengkap
+- 🔍 Security researcher yang membutuhkan tool recon cepat.
+- 🐛 Bug bounty hunter pada tahap information gathering.
+- 🎓 Pemula yang ingin belajar web security.
+- 🏢 Tim internal yang mengaudit aset organisasi sendiri.
 
-<table>
-<tr>
-<td width="50%">
+Versi publik ini berfokus pada pengumpulan informasi dan pemeriksaan read-only. Fitur **auto-exploit**, **auto-inject**, dan **auto-dump database** tidak disertakan.
 
-### 🔍 RECON
-| # | Fitur | Deskripsi |
-|---|-------|-----------|
-| 1 | Full Recon | IP, server, security headers, SSL |
-| 2 | Fetch Source | Grab HTML page |
-| 3 | HTTP Headers | Analisis response header |
-| 4 | DNS Lookup | A / AAAA / MX / NS / TXT / CNAME / SOA |
-| 5 | WHOIS Lookup | Domain & registrar info |
+## Fitur
 
-</td>
-<td width="50%">
+### 🔍 Recon
 
-### 📡 SCAN
-| # | Fitur | Deskripsi |
-|---|-------|-----------|
-| 6 | Port Scan | Top 18 port umum |
-| 7 | Directory Scan | Wordlist publik |
-| 8 | Subdomain Enum | OSINT subdomain |
-| 9 | SSL / TLS Info | Cert, cipher, SAN |
-| 10 | Tech Detect | CMS / framework fingerprint |
+| No. | Fitur | Deskripsi |
+|:---:|---|---|
+| 1 | Full Recon | IP, server, security headers, dan SSL |
+| 2 | Fetch Source | Mengambil HTML halaman |
+| 3 | HTTP Headers | Menganalisis response headers |
+| 4 | DNS Lookup | A, AAAA, MX, NS, TXT, CNAME, dan SOA |
+| 5 | WHOIS Lookup | Informasi domain dan registrar |
 
-</td>
-</tr>
-<tr>
-<td width="50%">
+### 📡 Scan
 
-### 🛠️ UTILITY
-| # | Fitur | Deskripsi |
-|---|-------|-----------|
-| 11 | Robots & Sitemap | File publik |
-| 12 | Auto Monitor | Real-time fetch + diff |
-| 13 | IDOR Checker | Pattern detection (read-only) |
+| No. | Fitur | Deskripsi |
+|:---:|---|---|
+| 6 | Port Scan | 18 port umum |
+| 7 | Directory Scan | Menggunakan wordlist publik |
+| 8 | Subdomain Enum | Enumerasi subdomain berbasis OSINT |
+| 9 | SSL / TLS Info | Sertifikat, cipher, dan SAN |
+| 10 | Tech Detect | Fingerprinting CMS dan framework |
 
-</td>
-<td width="50%">
+### 🛠️ Utility
 
-### 📚 LIBRARY
-| # | Fitur | Deskripsi |
-|---|-------|-----------|
-| 14 | Payload Reference | Educational payload library |
+| No. | Fitur | Deskripsi |
+|:---:|---|---|
+| 11 | Robots & Sitemap | Memeriksa file publik |
+| 12 | Auto Monitor | Fetch real-time dan perbandingan perubahan |
+| 13 | IDOR Checker | Deteksi pola secara read-only |
+| 14 | Payload Reference | Referensi payload edukatif |
 
-Cakupan:
-- SQLi (UNION / ORDER BY / Boolean / Time / WAF Bypass)
-- NoSQL Injection
-- Path Traversal
-- SSTI · SSRF · XXE · JWT
-- Command Injection
+Cakupan referensi payload meliputi SQLi, NoSQL injection, path traversal, SSTI, SSRF, XXE, JWT, dan command injection. Referensi ini hanya untuk pembelajaran dan tidak menjalankan eksploitasi otomatis.
 
-</td>
-</tr>
-</table>
-
----
-
-## 🖥️ Preview Tampilan
-
-### Menu Utama
-
-```
-
-[ASCII Demon Banner]
-
-+----------------------------------------------------------+
-
-| SAFE-YORTYMINE  v1.0.0  -  by Dexter Demon Team          |
-
-| [+] Status: GUEST  |  All features available             |
-+----------------------------------------------------------+
-
-+--- RECON ------------------------------------------------+
-
-| [ 1]  Full Recon           IP, headers, SSL              |
-
-| [ 2]  Fetch Source         grab HTML page                |
-
-| [ 3]  HTTP Headers         response headers              |
-
-| [ 4]  DNS Lookup           A/MX/NS/TXT records           |
-
-| [ 5]  WHOIS Lookup         domain info                   |
-+----------------------------------------------------------+
-
-+--- SCAN -------------------------------------------------+
-
-| [ 6]  Port Scan            top 18 common ports           |
-
-| [ 7]  Directory Scan       public wordlist               |
-
-| [ 8]  Subdomain Enum       OSINT subdomains              |
-
-| [ 9]  SSL / TLS Info       cert & cipher                 |
-
-| [10]  Tech Detect          CMS / framework               |
-+----------------------------------------------------------+
-
-+--- UTILITY ----------------------------------------------+
-
-| [11]  Robots & Sitemap     public files                  |
-
-| [12]  Auto Monitor         real-time fetch               |
-
-| [13]  IDOR Checker         pattern only                  |
-
-| [14]  Payload Reference    educational library           |
-+----------------------------------------------------------+
-
-+----------------------------------------------------------+
-
-| [00]  Exit                                               |
-+----------------------------------------------------------+
-
-```
-
-### Contoh Output — Full Recon
-
-```
-
-▎Target
-Input                  https://example.com
-IPv4                   93.184.216.34
-
-▎Server Response
-Status                 200 OK
-Server                 ECS (dcb/7F84)
-Content-Type           text/html; charset=UTF-8
-
-▎Security Headers
-Strict-Transport-Security    ✓ max-age=31536000
-Content-Security-Policy      ✗ MISSING
-X-Frame-Options              ✗ MISSING
-X-Content-Type-Options       ✓ nosniff
-Referrer-Policy              ✗ MISSING
-
-[!] 4 header keamanan hilang.
-
-▎SSL Certificate
-Issuer                 DigiCert Inc
-Valid Until            Mar 15 12:00:00 2027 GMT
-TLS                    1.3
-
-[+] Recon selesai.
-
-```
-
----
-
-## 📦 Instalasi
+## Instalasi
 
 ### Prasyarat
 
-| Requirement | Versi |
-|-------------|-------|
-| Python | 3.8+ |
-| pip | latest |
-| OS | Linux / macOS / Termux / WSL |
+| Requirement | Versi / Dukungan |
+|---|---|
+| Python | 3.8 atau lebih baru |
+| pip | Versi terbaru disarankan |
+| Sistem operasi | Linux, macOS, Termux, atau WSL |
 
-### Clone & Install
+### Clone dan install
 
 ```bash
-# 1. Clone
 git clone https://github.com/dexterdemonteam/SAFE-YORTYMINE.git
 cd SAFE-YORTYMINE
-
-# 2. Install dependencies
 pip install -r requirements.txt
 ```
 
-Kalau kena error externally-managed-environment:
-
-```bash
-pip install --break-system-packages -r requirements.txt
-```
-
-Atau pakai virtualenv:
+Jika muncul error `externally-managed-environment`, gunakan virtual environment:
 
 ```bash
 python3 -m venv venv
@@ -223,58 +106,118 @@ source venv/bin/activate    # Linux/macOS/Termux
 pip install -r requirements.txt
 ```
 
-Jalankan
+> Gunakan `pip install --break-system-packages -r requirements.txt` hanya jika kamu memahami dampaknya terhadap instalasi Python sistem.
+
+## Cara Pakai
+
+Jalankan aplikasi dengan:
 
 ```bash
 python start.py
 ```
 
----
+### 1. Login
 
-🚀 Cara Pakai
+- **Guest mode:** tekan `Enter` tanpa memasukkan password untuk mengakses fitur publik.
+- **Owner mode:** masukkan password khusus jika memilikinya.
 
-1️⃣ Login
+### 2. Pilih fitur
 
-Saat pertama kali jalan, kamu akan diminta password:
+Dari menu utama, masukkan nomor fitur `1–14`, lalu tekan `Enter`.
 
-· Guest mode → langsung Enter (akses semua fitur public)
-· Owner mode → password khusus (kalau punya)
+### 3. Masukkan target
 
-2️⃣ Pilih Fitur
-
-Dari menu utama, ketik nomor fitur (1-14) → Enter.
-
-3️⃣ Masukkan Target
-
-```
-[?] Target URL (https://example.com) :
+```text
+[?] Target URL (https://example.com):
 ```
 
-Input Hasil
-example.com auto jadi https://example.com
-https://example.com dipakai langsung
-http://testphp.vulnweb.com HTTP (bukan HTTPS)
+Contoh input:
 
-4️⃣ Lihat Hasil
+| Input | Hasil |
+|---|---|
+| `example.com` | Otomatis menggunakan `https://example.com` |
+| `https://example.com` | Digunakan langsung |
+| `http://testphp.vulnweb.com` | Tetap menggunakan HTTP |
 
-Output muncul dengan warna & struktur rapi. Tekan Enter untuk kembali ke menu.
+### 4. Lihat hasil
 
----
+Hasil pemeriksaan ditampilkan dengan warna dan struktur yang mudah dibaca. Tekan `Enter` untuk kembali ke menu utama.
 
-📂 Struktur Project
+## Preview Tampilan
 
+### Menu utama
+
+```text
++----------------------------------------------------------+
+| SAFE-YORTYMINE v1.0.0 — by Dexter Demon Team             |
+| [+] Status: GUEST | All public features available        |
++----------------------------------------------------------+
+| RECON                                                    |
+| [ 1] Full Recon       IP, headers, SSL                   |
+| [ 2] Fetch Source     Grab HTML page                     |
+| [ 3] HTTP Headers     Response headers                   |
+| [ 4] DNS Lookup       A/MX/NS/TXT records                |
+| [ 5] WHOIS Lookup     Domain information                 |
++----------------------------------------------------------+
+| SCAN                                                     |
+| [ 6] Port Scan        Top 18 common ports                |
+| [ 7] Directory Scan   Public wordlist                    |
+| [ 8] Subdomain Enum   OSINT subdomains                   |
+| [ 9] SSL / TLS Info   Certificate and cipher             |
+| [10] Tech Detect      CMS / framework                    |
++----------------------------------------------------------+
+| UTILITY                                                  |
+| [11] Robots & Sitemap Public files                       |
+| [12] Auto Monitor     Real-time fetch                    |
+| [13] IDOR Checker     Pattern detection                  |
+| [14] Payload Ref.     Educational library               |
++----------------------------------------------------------+
+| [00] Exit                                                |
++----------------------------------------------------------+
 ```
+
+### Contoh output Full Recon
+
+```text
+Target
+  Input       https://example.com
+  IPv4        93.184.216.34
+
+Server Response
+  Status      200 OK
+  Server      ECS (dcb/7F84)
+  Type        text/html; charset=UTF-8
+
+Security Headers
+  HSTS                    ✓ max-age=31536000
+  Content-Security-Policy ✗ MISSING
+  X-Frame-Options         ✗ MISSING
+  X-Content-Type-Options  ✓ nosniff
+  Referrer-Policy         ✗ MISSING
+
+[!] 4 security headers are missing.
+
+SSL Certificate
+  Issuer      DigiCert Inc
+  Valid Until Mar 15 12:00:00 2027 GMT
+  TLS         1.3
+
+[+] Recon selesai.
+```
+
+## Struktur Project
+
+```text
 SAFE-YORTYMINE/
-├── logo.png                     ← Official logo
-├── README.md                    ← Dokumentasi ini
-├── LEGAL.md                     ← Legal notice
-├── LICENSE                      ← License file
-├── requirements.txt             ← Dependencies
-├── .gitignore                   ← Git ignore
-├── start.py                     ← Main entry point
-├── auth.py                      ← Login handler
-│
-├── modules/                     ← Feature modules
+├── logo.png
+├── README.md
+├── LEGAL.md
+├── LICENSE
+├── requirements.txt
+├── .gitignore
+├── start.py                  # Main entry point
+├── auth.py                   # Login handler
+├── modules/
 │   ├── banner.py
 │   ├── recon.py
 │   ├── fetch.py
@@ -290,347 +233,155 @@ SAFE-YORTYMINE/
 │   ├── auto_monitor.py
 │   ├── idor_checker.py
 │   └── payload_ref.py
-│
-└── utils/                       ← Utilities
+└── utils/
     ├── colors.py
     └── http_client.py
 ```
 
----
+## Target Latihan Legal
 
-⚖️ Legal Notice
+Gunakan hanya target yang memang disediakan untuk latihan atau target yang kamu miliki:
 
-<div align="center">
+| Target | Keterangan |
+|---|---|
+| `testphp.vulnweb.com` | Demo Acunetix, sengaja rentan |
+| `demo.testfire.net` | Demo IBM, sengaja rentan |
+| OWASP Juice Shop | Jalankan instance lab sendiri jika memungkinkan |
+| DVWA | Self-hosted |
+| Hack The Box | Memerlukan akun dan mengikuti aturan platform |
+| TryHackMe | Mengikuti aturan room dan platform |
 
-🚨 BACA SEBELUM PAKAI 🚨
+> Jangan menggunakan situs acak sebagai target. Pastikan scope dan izin sudah jelas sebelum melakukan pemeriksaan.
 
-Tool ini hanya untuk tujuan EDUKASI dan AUDIT KEAMANAN yang SAH.
+## Legal Notice
 
-</div>
+### Penggunaan yang diperbolehkan
 
-✅ Legal Use
+- Aset sendiri: server, aplikasi, atau domain milikmu.
+- Program bug bounty sesuai scope dan policy.
+- Lab, CTF, atau target yang sengaja dibuat rentan.
+- Pengujian penetration test berdasarkan kontrak atau izin tertulis.
 
-Boleh dipakai untuk:
+### Penggunaan yang dilarang
 
-· 🏠 Aset sendiri — server, aplikasi, domain milikmu
-· 🐛 Bug bounty program — sesuai scope & policy
-· 🎓 Lab / CTF — target yang sengaja rentan
-· 📝 Kontrak pentest — dengan izin tertulis
+- Memindai atau menyerang situs tanpa izin.
+- DDoS, spam, flooding, atau tindakan yang mengganggu layanan.
+- Mengakses, mengumpulkan, atau menyebarkan data pribadi tanpa hak.
+- Stalking, doxing, harassment, atau aktivitas ilegal lainnya.
 
-❌ Dilarang Keras
+### Disclaimer
 
-· ❌ Scan / serang situs orang lain tanpa izin
-· ❌ DDoS, spam, atau flooding
-· ❌ Pencurian data pribadi
-· ❌ Stalking, doxing, harassment
-· ❌ Aktivitas ilegal lainnya
+Dengan mengunduh, memasang, atau menggunakan tool ini, kamu menyetujui bahwa:
 
-🌏 Pasal-Pasal Hukum
+1. Kamu bertanggung jawab penuh atas seluruh tindakanmu.
+2. Kamu akan mematuhi hukum yang berlaku di wilayahmu.
+3. Tool ini hanya digunakan untuk tujuan yang sah dan berizin.
+4. Kamu tidak akan menyalahgunakan tool untuk aktivitas kriminal.
+5. Dexter Demon Team tidak bertanggung jawab atas kerugian atau konsekuensi akibat penyalahgunaan tool.
+
+Jika tidak setuju dengan ketentuan tersebut, **jangan gunakan tool ini**. Lihat [`LEGAL.md`](./LEGAL.md) untuk informasi selengkapnya.
+
+## FAQ
 
 <details>
-<summary><b>🇮🇩 Indonesia</b></summary>
+<summary><b>Mengapa tidak ada auto-exploit?</b></summary>
 
-Pasal Isi Ancaman
-UU ITE No. 11/2008 Pasal 30 Akses komputer tanpa izin 6-8 tahun + denda Rp 600-800 juta
-UU ITE Pasal 32 Transfer informasi tanpa izin 8-10 tahun + denda Rp 2-5 miliar
-UU ITE Pasal 33 Gangguan sistem elektronik 10 tahun + denda Rp 10 miliar
-UU ITE Pasal 35 Manipulasi data elektronik 12 tahun + denda Rp 12 miliar
-UU PDP No. 27/2022 Pasal 65 Pengumpulan data pribadi ilegal 5 tahun + denda Rp 5 miliar
-UU PDP Pasal 67 Pengungkapan data pribadi 5 tahun + denda Rp 5 miliar
-KUHP Pasal 362 Pencurian data 5 tahun + denda
-KUHP Pasal 406 Perusakan 2 tahun 8 bulan
+SAFE-YORTYMINE adalah versi publik yang berfokus pada edukasi, recon, dan pemeriksaan read-only. Fitur serangan aktif sengaja tidak disertakan untuk mengurangi risiko penyalahgunaan.
 
 </details>
 
 <details>
-<summary><b>🇺🇸 United States</b></summary>
+<summary><b>Mengapa scan saya lambat?</b></summary>
 
-Pasal Isi Ancaman
-CFAA 18 U.S.C. § 1030 Unauthorized computer access 5-20 tahun federal prison
-DMCA § 1201 Circumvention of protections 5 tahun + $500,000
-Wire Fraud 18 U.S.C. § 1343 Fraud via electronic communication 20 tahun + $250,000
-Stored Communications Act Unauthorized access to stored data 5 tahun
+Periksa koneksi internet, kondisi server target, firewall lokal, dan nilai timeout di konfigurasi aplikasi.
 
 </details>
 
 <details>
-<summary><b>🇬🇧 United Kingdom</b></summary>
+<summary><b>Bagaimana mengatasi error ModuleNotFoundError?</b></summary>
 
-Pasal Isi Ancaman
-Computer Misuse Act 1990 § 1 Unauthorized access 2 tahun + unlimited fine
-CMA § 2 Unauthorized access with intent 5 tahun
-CMA § 3 Unauthorized modification 10 tahun
-CMA § 3ZA Impairment of computer 14 tahun
-Data Protection Act 2018 Data privacy violation Unlimited fine
-GDPR Art. 83 Data protection breach €20 million / 4% revenue
-
-</details>
-
-<details>
-<summary><b>🇩🇪 Germany</b></summary>
-
-Pasal Isi Ancaman
-StGB § 202a Data espionage 3 tahun
-StGB § 202b Interception of data 2 tahun
-StGB § 202c Preparing data espionage 1 tahun
-StGB § 303a Data modification 2 tahun
-StGB § 303b Computer sabotage 5 tahun
-BDSG (GDPR) Privacy violation €20 million
-
-</details>
-
-<details>
-<summary><b>🇦🇺 Australia</b></summary>
-
-Pasal Isi Ancaman
-Criminal Code Act 1995 § 477.1 Unauthorized access 2 tahun
-§ 477.2 Unauthorized modification 10 tahun
-§ 477.3 Unauthorized impairment 10 tahun
-§ 478.1 Unauthorized access to data 2 tahun
-Privacy Act 1988 Privacy violation AUD 50 million
-
-</details>
-
-<details>
-<summary><b>🇸🇬 Singapore</b></summary>
-
-Pasal Isi Ancaman
-Computer Misuse Act § 3 Unauthorized access SGD 5,000 + 2 tahun
-CMA § 4 Access with intent SGD 50,000 + 10 tahun
-CMA § 5 Unauthorized modification SGD 10,000 + 3 tahun
-CMA § 7 Unauthorized use of computer SGD 50,000 + 7 tahun
-PDPA Data privacy violation SGD 1 million
-
-</details>
-
-<details>
-<summary><b>🇯🇵 Japan</b></summary>
-
-Pasal Isi Ancaman
-刑法 第168条の2 Unauthorized access 3 tahun + ¥1 juta
-刑法 第168条の3 Access with intent 5 tahun + ¥1 juta
-不正アクセス禁止法 § 3 Unauthorized access 1 tahun + ¥1 juta
-個人情報保護法 Data privacy violation ¥100 juta
-
-</details>
-
-<details>
-<summary><b>🇲🇾 Malaysia</b></summary>
-
-Pasal Isi Ancaman
-Computer Crimes Act 1997 § 3 Unauthorized access RM 50,000 + 5 tahun
-CCA § 4 Access with intent RM 150,000 + 10 tahun
-CCA § 5 Unauthorized modification RM 100,000 + 7 tahun
-PDPA 2010 Data privacy violation RM 500,000 + 3 tahun
-
-</details>
-
-📜 Disclaimer
-
-```
-Dexter Demon Team tidak bertanggung jawab atas penyalahgunaan tool ini.
-Dengan mengunduh, menginstall, atau menggunakan tool ini, kamu setuju:
-
-1. Bertanggung jawab penuh atas semua aksimu
-2. Mematuhi semua hukum yang berlaku di negaramu
-3. Menggunakan hanya untuk tujuan yang sah & legal
-4. Tidak menyalahgunakan untuk aktivitas kriminal
-5. Menerima bahwa author tidak bertanggung jawab atas konsekuensi apapun
-
-Kalau tidak setuju → JANGAN PAKAI TOOL INI.
-```
-
----
-
-🧪 Target Latihan Legal
-
-Target URL Scope
-🎯 Acunetix Demo testphp.vulnweb.com Legal, sengaja rentan
-🎯 IBM Demo demo.testfire.net Legal, sengaja rentan
-🎯 OWASP Juice Shop juice-shop.herokuapp.com Legal
-🎯 DVWA self-host Bikin sendiri
-🎯 HackTheBox hackthebox.com Paid, legal
-🎯 TryHackMe tryhackme.com Free & paid
-
-JANGAN pakai situs random — itu ilegal!
-
----
-
-❓ FAQ
-
-<details>
-<summary><b>Q: Kenapa tool ini gak ada auto-exploit?</b></summary>
-
-A: Ini versi PUBLIC/SAFE. Fitur serangan aktif sengaja dihilangkan supaya:
-
-· Aman diupload ke GitHub
-· Gak disalahgunakan
-· Tetap fokus ke edukasi & recon
-
-</details>
-
-<details>
-<summary><b>Q: Beda dengan versi privat?</b></summary>
-
-A: Versi privat punya fitur tambahan:
-
-· Auto SQLi injection
-· Auto database dump
-· AI reasoning engine
-· Multi-dataset payload
-
-Gak akan di-release ke publik.
-
-</details>
-
-<details>
-<summary><b>Q: Kenapa scan saya lambat?</b></summary>
-
-A: Cek:
-
-1. Koneksi internet
-2. Target server (mungkin lambat)
-3. Firewall lokal
-4. Naikin timeout di kode
-
-</details>
-
-<details>
-<summary><b>Q: Error "ModuleNotFoundError"?</b></summary>
-
-A: Install dependencies:
+Pastikan dependency sudah terpasang:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Kalau kena externally-managed-environment:
-
-```bash
-pip install --break-system-packages -r requirements.txt
-```
+Disarankan menggunakan virtual environment.
 
 </details>
 
 <details>
-<summary><b>Q: Bisa dipakai di Windows?</b></summary>
+<summary><b>Apakah bisa dipakai di Windows?</b></summary>
 
-A: Bisa, tapi rekomendasi Linux/macOS/Termux. Windows pakai WSL atau Git Bash.
+Bisa melalui WSL atau Git Bash. Linux, macOS, dan Termux tetap menjadi platform yang direkomendasikan.
 
 </details>
 
 <details>
-<summary><b>Q: Bisa buat scan situs orang?</b></summary>
+<summary><b>Apakah boleh memindai situs orang lain?</b></summary>
 
-A: TIDAK. Itu ilegal. Cek Legal Notice di atas.
+Tidak, kecuali kamu memiliki izin yang jelas dan target tersebut berada dalam scope yang disetujui.
 
 </details>
 
----
+## Kontribusi
 
-🤝 Kontribusi
+Pull request dipersilakan dengan ketentuan:
 
-Pull request welcome. Tapi ikutin rules:
+- ✅ Perubahan berfokus pada fitur pasif atau defensif.
+- ✅ Dokumentasi disertakan dan tetap jelas.
+- ✅ Tidak menambahkan auto-exploit, auto-inject, atau auto-dump.
+- ✅ Perubahan sudah diuji sebelum diajukan.
 
-· ✅ Fitur passive atau defensive aja
-· ✅ Ada dokumentasi jelas
-· ✅ Gak ada auto-exploit
-· ✅ Test dulu sebelum submit
+## Changelog
 
----
+### v1.0.0 — Current
 
-📝 Changelog
+- ✨ Initial public release.
+- 🎯 14 fitur recon, scan, utility, dan library.
+- 🎨 CLI berwarna dengan box drawing.
+- 📚 Payload reference library untuk edukasi.
+- 📡 Auto monitor real-time.
+- 🔒 Safe untuk distribusi publik.
 
-v1.0.0 — Current
+## Lisensi
 
-· ✨ Initial public release
-· 🎯 14 fitur (recon, scan, utility, library)
-· 🎨 Colored CLI dengan box drawing
-· 📚 Payload reference library
-· 📡 Auto monitor real-time
-· 🔒 Safe for public release
+**DEXTER DEMON PROPRIETARY LICENSE — Version 1.0**
 
----
+Copyright (c) 2026 Dexter Demon Team. All Rights Reserved.
 
-📄 Lisensi
+### Yang diperbolehkan
 
-DEXTER DEMON PROPRIETARY LICENSE
-Version 1.0 — All Rights Reserved
+- 📖 Melihat dan membaca source code untuk edukasi.
+- 💻 Menjalankan tool untuk penggunaan pribadi dan non-komersial.
+- 🐛 Melaporkan bug dan menyarankan perbaikan.
 
-```
-Copyright (c) 2026 Dexter Demon Team
-All Rights Reserved.
-```
+### Yang dilarang
 
-✅ Yang BOLEH
+- 🚫 Mendistribusikan ulang ke platform lain.
+- 🚫 Menjual atau mengomersialkan dalam bentuk apa pun.
+- 🚫 Mengklaim karya sebagai milik sendiri.
+- 🚫 Melakukan rebranding atau mengganti nama.
+- 🚫 Membuat versi modifikasi tanpa izin.
+- 🚫 Membundel tool ke produk lain.
+- 🚫 Membuat mirror di server mana pun.
 
-· 📖 View & baca source code (educational)
-· 💻 Run untuk personal, non-commercial
-· 🐛 Report bug & suggest improvements
+Baca file [`LICENSE`](./LICENSE) untuk teks lisensi lengkap.
 
-❌ Yang DILARANG
-
-· 🚫 Sebar ulang (redistribute) ke platform lain
-· 🚫 Jual / komersilkan dalam bentuk apapun
-· 🚫 Klaim sebagai karya sendiri
-· 🚫 Rebranding atau ganti nama
-· 🚫 Bikin versi modifikasi tanpa izin
-· 🚫 Bundle ke produk lain
-· 🚫 Mirror di server manapun
-
-🏴 Distribusi Resmi
-
-Distribusi HANYA boleh oleh:
-
-```
-┌─────────────────────────────────────────────┐
-│                                             │
-│         DEXTER DEMON TEAM                   │
-│         (Official Owner & Maintainer)       │
-│                                             │
-└─────────────────────────────────────────────┘
-```
-
-⚖️ Legal Enforcement
-
-Pelanggaran lisensi ini = pelanggaran hak cipta yang bisa:
-
-· 🚨 DMCA takedown
-· 🚨 Legal action
-· 🚨 Account suspension
-
-📜 Full License
-
-Baca file LICENSE untuk teks lengkap.
-
----
-
-👤 Author
+## Author
 
 <div align="center">
 
-<img src="./logo.png" alt="Dexter Demon Team" width="100"/>
+<img src="./logo.png" alt="Dexter Demon Team" width="100" />
 
-Dexter Demon Team
+**Dexter Demon Team**
 
-📢 WhatsApp Channel
+[📢 WhatsApp Channel](https://whatsapp.com/channel/0029Vb8R7mh4tRrz7K4vBm23)
 
-⭐ Kalau tool ini berguna, kasih star di GitHub!
+⭐ Jika tool ini bermanfaat, berikan star di GitHub.
 
----
-
-⚠️ With great power comes great responsibility.
-
-Use ethically. Hack ethically. Stay legal.
-
-```
-  ██████╗ ███████╗██╗  ██╗████████╗███████╗██████╗ 
-  ██╔══██╗██╔════╝╚██╗██╔╝╚══██╔══╝██╔════╝██╔══██╗
-  ██║  ██║█████╗   ╚███╔╝    ██║   █████╗  ██████╔╝
-  ██║  ██║██╔══╝   ██╔██╗    ██║   ██╔══╝  ██╔══██╗
-  ██████╔╝███████╗██╔╝ ██╗   ██║   ███████╗██║  ██║
-  ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-```
+> With great power comes great responsibility.
+> Use ethically. Hack ethically. Stay legal.
 
 © 2026 Dexter Demon Team — All Rights Reserved.
 
