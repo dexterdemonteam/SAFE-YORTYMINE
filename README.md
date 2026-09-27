@@ -18,8 +18,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](./LICENSE)
-[![Copyright](https://img.shields.io/badge/©%202024-Dexter%20Demon%20Team-black?style=for-the-badge)]()
-[![Copyright](https://img.shields.io/badge/©%202024-Dexter%20Demon%20Team-black?style=for-the-badge)]()
+[![Copyright](https://img.shields.io/badge/©%202026-Dexter%20Demon%20Team-black?style=for-the-badge)]()
+[![Copyright](https://img.shields.io/badge/©%202026-Dexter%20Demon%20Team-black?style=for-the-badge)]()
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Termux-orange?style=for-the-badge)](https://termux.dev)
 [![Status](https://img.shields.io/badge/Status-Educational-red?style=for-the-badge)]()
 [![Made with](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge)]()
