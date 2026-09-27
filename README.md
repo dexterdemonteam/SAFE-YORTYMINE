@@ -1,32 +1,27 @@
-
 <div align="center">
 
-```
+<img src="./logo.png" alt="YORTYMINE Logo" width="220"/>
 
-███████╗ █████╗ ███████╗███████╗    ██╗   ██╗ ██████╗ ██████╗ ████████╗██╗   ██╗███╗   ███╗██╗███╗   ██╗███████╗
-██╔════╝██╔══██╗██╔════╝██╔════╝    ╚██╗ ██╔╝██╔═══██╗██╔══██╗╚══██╔══╝╚██╗ ██╔╝████╗ ████║██║████╗  ██║██╔════╝
-███████╗███████║█████╗  █████╗       ╚████╔╝ ██║   ██║██████╔╝   ██║    ╚████╔╝ ██╔████╔██║██║██╔██╗ ██║█████╗
-╚════██║██╔══██║██╔══╝  ██╔══╝        ╚██╔╝  ██║   ██║██╔══██╗   ██║     ╚██╔╝  ██║╚██╔╝██║██║██║╚██╗██║██╔══╝
-███████║██║  ██║██║     ███████╗       ██║   ╚██████╔╝██║  ██║   ██║      ██║   ██║ ╚═╝ ██║██║██║ ╚████║███████╗
-╚══════╝╚═╝  ╚═╝╚═╝     ╚══════╝       ╚═╝    ╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝
+# SAFE-YORTYMINE
 
-```
-
-### Web Reconnaissance & Security Audit Toolkit
+**Web Reconnaissance & Security Audit Toolkit**
 
 **v1.0.0 · by Dexter Demon Team**
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Termux-orange?style=for-the-badge)](https://termux.dev)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](./LICENSE)
 [![Copyright](https://img.shields.io/badge/©%202026-Dexter%20Demon%20Team-black?style=for-the-badge)]()
-[![Copyright](https://img.shields.io/badge/©%202026-Dexter%20Demon%20Team-black?style=for-the-badge)]()
-[![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS%20%7C%20Termux-orange?style=for-the-badge)](https://termux.dev)
-[![Status](https://img.shields.io/badge/Status-Educational-red?style=for-the-badge)]()
-[![Made with](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red?style=for-the-badge)]()
 
-</div>
+[![WhatsApp Channel](https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029Vb8R7mh4tRrz7K4vBm23)
 
 ---
+
+### 📢 Update terbaru & diskusi → **[Join Channel WhatsApp](https://whatsapp.com/channel/0029Vb8R7mh4tRrz7K4vBm23)**
+
+---
+
+</div>
 
 ## 🎯 Tentang SAFE-YORTYMINE
 
@@ -92,11 +87,8 @@ Cakupan:
 - SQLi (UNION / ORDER BY / Boolean / Time / WAF Bypass)
 - NoSQL Injection
 - Path Traversal
-- SSTI
-- SSRF
+- SSTI · SSRF · XXE · JWT
 - Command Injection
-- XXE
-- JWT Attacks
 
 </td>
 </tr>
@@ -182,10 +174,8 @@ Content-Security-Policy      ✗ MISSING
 X-Frame-Options              ✗ MISSING
 X-Content-Type-Options       ✓ nosniff
 Referrer-Policy              ✗ MISSING
-Permissions-Policy           ✗ MISSING
-X-XSS-Protection             ✗ MISSING
 
-[!] 5 header keamanan hilang.
+[!] 4 header keamanan hilang.
 
 ▎SSL Certificate
 Issuer                 DigiCert Inc
@@ -196,29 +186,11 @@ TLS                    1.3
 
 ```
 
-### Contoh Output — Auto Monitor
-
-```
-
-[*] Monitoring https://example.com (5x, tiap 10s)
-
-┌─ MONITOR ──────────────────────────────┐
-│ [ 1/5] 14:23:01  200  len=1256   sig=a8f3c2e1b9d0
-│ [ 2/5] 14:23:11  200  len=1256   sig=a8f3c2e1b9d0
-│ [ 3/5] 14:23:21  200  len=1289   sig=b7e1d4a8c3f2  [CHANGED]  (len +33)
-│ [ 4/5] 14:23:31  200  len=1289   sig=b7e1d4a8c3f2
-│ [ 5/5] 14:23:41  200  len=1256   sig=a8f3c2e1b9d0  [CHANGED]  (len -33)
-└────────────────────────────────────────┘
-
-[+] Log tersimpan → monitor_log/example.com_1736789012.log
-
-```
-
 ---
 
 ## 📦 Instalasi
 
-### 🔧 Prasyarat
+### Prasyarat
 
 | Requirement | Versi |
 |-------------|-------|
@@ -226,37 +198,32 @@ TLS                    1.3
 | pip | latest |
 | OS | Linux / macOS / Termux / WSL |
 
-### 📥 Cara Install
-
-**1. Clone repository**
+### Clone & Install
 
 ```bash
-git clone https://github.com/USERNAME/SAFE-YORTYMINE.git
+# 1. Clone
+git clone https://github.com/dexterdemonteam/SAFE-YORTYMINE.git
 cd SAFE-YORTYMINE
-```
 
-2. Install dependencies
-
-```bash
+# 2. Install dependencies
 pip install -r requirements.txt
 ```
 
-Kalau pakai Termux / Debian baru dan kena error externally-managed-environment:
+Kalau kena error externally-managed-environment:
 
 ```bash
 pip install --break-system-packages -r requirements.txt
 ```
 
-Atau pakai virtualenv (recommended):
+Atau pakai virtualenv:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate    # Linux/macOS/Termux
-# venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 ```
 
-3. Jalankan
+Jalankan
 
 ```bash
 python start.py
@@ -268,7 +235,7 @@ python start.py
 
 1️⃣ Login
 
-Saat pertama kali jalan, kamu akan diminta password. Untuk versi publik:
+Saat pertama kali jalan, kamu akan diminta password:
 
 · Guest mode → langsung Enter (akses semua fitur public)
 · Owner mode → password khusus (kalau punya)
@@ -282,8 +249,6 @@ Dari menu utama, ketik nomor fitur (1-14) → Enter.
 ```
 [?] Target URL (https://example.com) :
 ```
-
-Contoh input yang valid:
 
 Input Hasil
 example.com auto jadi https://example.com
@@ -300,35 +265,35 @@ Output muncul dengan warna & struktur rapi. Tekan Enter untuk kembali ke menu.
 
 ```
 SAFE-YORTYMINE/
+├── logo.png                     ← Official logo
 ├── README.md                    ← Dokumentasi ini
 ├── LEGAL.md                     ← Legal notice
+├── LICENSE                      ← License file
 ├── requirements.txt             ← Dependencies
-├── .gitignore                   ← Git ignore rules
+├── .gitignore                   ← Git ignore
 ├── start.py                     ← Main entry point
 ├── auth.py                      ← Login handler
 │
-├── modules/                     ← Fitur modules
-│   ├── __init__.py
-│   ├── banner.py                ← ASCII banner
-│   ├── recon.py                 ← [1] Full Recon
-│   ├── fetch.py                 ← [2] Fetch Source
-│   ├── headers.py               ← [3] HTTP Headers
-│   ├── dns_lookup.py            ← [4] DNS Lookup
-│   ├── whois_lookup.py          ← [5] WHOIS
-│   ├── port_scan.py             ← [6] Port Scan
-│   ├── dir_scan.py              ← [7] Directory Scan
-│   ├── ssl_info.py              ← [8] SSL Info
-│   ├── subdomain.py             ← [9] Subdomain Enum
-│   ├── tech_detect.py           ← [10] Tech Detect
-│   ├── robots_sitemap.py        ← [11] Robots
-│   ├── auto_monitor.py          ← [12] Auto Monitor
-│   ├── idor_checker.py          ← [13] IDOR Checker
-│   └── payload_ref.py           ← [14] Payload Reference
+├── modules/                     ← Feature modules
+│   ├── banner.py
+│   ├── recon.py
+│   ├── fetch.py
+│   ├── headers.py
+│   ├── dns_lookup.py
+│   ├── whois_lookup.py
+│   ├── port_scan.py
+│   ├── dir_scan.py
+│   ├── ssl_info.py
+│   ├── subdomain.py
+│   ├── tech_detect.py
+│   ├── robots_sitemap.py
+│   ├── auto_monitor.py
+│   ├── idor_checker.py
+│   └── payload_ref.py
 │
-└── utils/                       ← Utility modules
-    ├── __init__.py
-    ├── colors.py                ← Terminal colors
-    └── http_client.py           ← HTTP helper
+└── utils/                       ← Utilities
+    ├── colors.py
+    └── http_client.py
 ```
 
 ---
@@ -347,10 +312,10 @@ Tool ini hanya untuk tujuan EDUKASI dan AUDIT KEAMANAN yang SAH.
 
 Boleh dipakai untuk:
 
-· 🏠 Aset sendiri — server, aplikasi, domain yang kamu miliki
-· 🐛 Bug bounty program — sesuai scope & policy yang berlaku
-· 🎓 Lab / CTF — target yang sengaja dibuat rentan
-· 📝 Kontrak pentest — dengan izin tertulis dari pemilik aset
+· 🏠 Aset sendiri — server, aplikasi, domain milikmu
+· 🐛 Bug bounty program — sesuai scope & policy
+· 🎓 Lab / CTF — target yang sengaja rentan
+· 📝 Kontrak pentest — dengan izin tertulis
 
 ❌ Dilarang Keras
 
@@ -366,9 +331,9 @@ Boleh dipakai untuk:
 <summary><b>🇮🇩 Indonesia</b></summary>
 
 Pasal Isi Ancaman
-UU ITE No. 11/2008 Pasal 30 Akses komputer/ sistem elektronik tanpa izin 6-8 tahun + denda Rp 600-800 juta
+UU ITE No. 11/2008 Pasal 30 Akses komputer tanpa izin 6-8 tahun + denda Rp 600-800 juta
 UU ITE Pasal 32 Transfer informasi tanpa izin 8-10 tahun + denda Rp 2-5 miliar
-UU ITE Pasal 33 Gangguan sistem elektronik (DDoS) 10 tahun + denda Rp 10 miliar
+UU ITE Pasal 33 Gangguan sistem elektronik 10 tahun + denda Rp 10 miliar
 UU ITE Pasal 35 Manipulasi data elektronik 12 tahun + denda Rp 12 miliar
 UU PDP No. 27/2022 Pasal 65 Pengumpulan data pribadi ilegal 5 tahun + denda Rp 5 miliar
 UU PDP Pasal 67 Pengungkapan data pribadi 5 tahun + denda Rp 5 miliar
@@ -385,7 +350,6 @@ CFAA 18 U.S.C. § 1030 Unauthorized computer access 5-20 tahun federal prison
 DMCA § 1201 Circumvention of protections 5 tahun + $500,000
 Wire Fraud 18 U.S.C. § 1343 Fraud via electronic communication 20 tahun + $250,000
 Stored Communications Act Unauthorized access to stored data 5 tahun
-State Laws Bervariasi per negara bagian Bervariasi
 
 </details>
 
@@ -480,15 +444,13 @@ Kalau tidak setuju → JANGAN PAKAI TOOL INI.
 
 🧪 Target Latihan Legal
 
-Buat latihan, gunakan target yang sengaja dibuat rentan:
-
 Target URL Scope
 🎯 Acunetix Demo testphp.vulnweb.com Legal, sengaja rentan
 🎯 IBM Demo demo.testfire.net Legal, sengaja rentan
-🎯 OWASP Juice Shop juice-shop.herokuapp.com Legal, sengaja rentan
+🎯 OWASP Juice Shop juice-shop.herokuapp.com Legal
 🎯 DVWA self-host Bikin sendiri
 🎯 HackTheBox hackthebox.com Paid, legal
-🎯 TryHackMe tryhackme.com Free & paid, legal
+🎯 TryHackMe tryhackme.com Free & paid
 
 JANGAN pakai situs random — itu ilegal!
 
@@ -527,9 +489,9 @@ Gak akan di-release ke publik.
 A: Cek:
 
 1. Koneksi internet
-2. Target server (mungkin lambat / block)
+2. Target server (mungkin lambat)
 3. Firewall lokal
-4. Coba naikin timeout di kode
+4. Naikin timeout di kode
 
 </details>
 
@@ -553,7 +515,7 @@ pip install --break-system-packages -r requirements.txt
 <details>
 <summary><b>Q: Bisa dipakai di Windows?</b></summary>
 
-A: Bisa, tapi rekomendasi Linux/macOS/Termux. Windows pakai WSL atau Git Bash buat tampilan warna.
+A: Bisa, tapi rekomendasi Linux/macOS/Termux. Windows pakai WSL atau Git Bash.
 
 </details>
 
@@ -592,29 +554,54 @@ v1.0.0 — Current
 
 📄 Lisensi
 
-MIT License
+DEXTER DEMON PROPRIETARY LICENSE
+Version 1.0 — All Rights Reserved
 
 ```
 Copyright (c) 2026 Dexter Demon Team
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+All Rights Reserved.
 ```
+
+✅ Yang BOLEH
+
+· 📖 View & baca source code (educational)
+· 💻 Run untuk personal, non-commercial
+· 🐛 Report bug & suggest improvements
+
+❌ Yang DILARANG
+
+· 🚫 Sebar ulang (redistribute) ke platform lain
+· 🚫 Jual / komersilkan dalam bentuk apapun
+· 🚫 Klaim sebagai karya sendiri
+· 🚫 Rebranding atau ganti nama
+· 🚫 Bikin versi modifikasi tanpa izin
+· 🚫 Bundle ke produk lain
+· 🚫 Mirror di server manapun
+
+🏴 Distribusi Resmi
+
+Distribusi HANYA boleh oleh:
+
+```
+┌─────────────────────────────────────────────┐
+│                                             │
+│         DEXTER DEMON TEAM                   │
+│         (Official Owner & Maintainer)       │
+│                                             │
+└─────────────────────────────────────────────┘
+```
+
+⚖️ Legal Enforcement
+
+Pelanggaran lisensi ini = pelanggaran hak cipta yang bisa:
+
+· 🚨 DMCA takedown
+· 🚨 Legal action
+· 🚨 Account suspension
+
+📜 Full License
+
+Baca file LICENSE untuk teks lengkap.
 
 ---
 
@@ -622,23 +609,17 @@ SOFTWARE.
 
 <div align="center">
 
+<img src="./logo.png" alt="Dexter Demon Team" width="100"/>
+
 Dexter Demon Team
 
-🌐 GitHub: @USERNAME
-📧 Email: dexter-demon@example.com
-
----
-
-Made with ❤️ for the security community
+📢 WhatsApp Channel
 
 ⭐ Kalau tool ini berguna, kasih star di GitHub!
 
-https://img.shields.io/github/stars/USERNAME/SAFE-YORTYMINE?style=social
-https://img.shields.io/github/forks/USERNAME/SAFE-YORTYMINE?style=social
-
 ---
 
-⚠️ Remember: With great power comes great responsibility.
+⚠️ With great power comes great responsibility.
 
 Use ethically. Hack ethically. Stay legal.
 
@@ -649,14 +630,8 @@ Use ethically. Hack ethically. Stay legal.
   ██║  ██║██╔══╝   ██╔██╗    ██║   ██╔══╝  ██╔══██╗
   ██████╔╝███████╗██╔╝ ██╗   ██║   ███████╗██║  ██║
   ╚═════╝ ╚══════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
-                                                  
-  ██████╗ ███████╗███╗   ███╗ ██████╗ ███╗   ██╗
-  ██╔══██╗██╔════╝████╗ ████║██╔═══██╗████╗  ██║
-  ██║  ██║█████╗  ██╔████╔██║██║   ██║██╔██╗ ██║
-  ██║  ██║██╔══╝  ██║╚██╔╝██║██║   ██║██║╚██╗██║
-  ██████╔╝███████╗██║ ╚═╝ ██║╚██████╔╝██║ ╚████║
-  ╚═════╝ ╚══════╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
 ```
 
-</div>
+© 2026 Dexter Demon Team — All Rights Reserved.
 
+</div>
